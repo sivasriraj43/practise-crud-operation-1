@@ -21,15 +21,15 @@
    <tbody>
    {% for i in obj %}
      <tr>
-       <td>{{i.oid}}</td>
+       <td>{{i.sno}}</td>
        <td>{{i.fname}}</td>
        <td>{{i.lname}}</td>
        <td>{{i.price}}</td>
        <td>{{i.mail}}</td>
        <td>{{i.addr}}</td>
        <td>
-           <button class="btn btn-warning"><a href="{% url 'update_url' i.oid %}">Update</a></button>&nbsp;&nbsp;
-           <button class="btn btn-danger"><a href="{% url 'delete_url' i.oid %}">Delete</a></button>
+           <button class="btn btn-warning"><a href="{% url 'update_url' i.sno %}">Update</a></button>&nbsp;&nbsp;
+           <button class="btn btn-danger"><a href="{% url 'delete_url' i.sno %}">Delete</a></button>
        </td>
      </tr>
    {% endfor %}
